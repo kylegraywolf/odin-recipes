@@ -5,6 +5,10 @@
     font-size: 16px;
 }
 
+body {
+    background-image: linear-gradient(rgba(224, 185, 228, 0.5), rgba(202, 204, 75, 0.8));
+}
+
 h1 {
     font-family: 'Pirata One', cursive;
     font-size: 5rem;
@@ -39,10 +43,7 @@ p {
     margin: 0;
     margin-top: 0.5rem;
 }
-#nav {
-    margin: 0;
-    padding: 0;
-}
+
 
 /* remove bullet points */
 .nav-links {
@@ -57,5 +58,22 @@ p {
     text-decoration: none;
     color: inherit;
     font-size: 1.5rem;
+}
+
+.container-center {
+    height: 100vh; /* fill entire webpage vertically (view height) */
+    width: 100vw;
+    display: flex; /* setup in flexbox to center appropriately */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav { /* had to separate out .nav div to get the list to properly center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%; /* set width (not full page) so text doesn't wrap */
 }
 
